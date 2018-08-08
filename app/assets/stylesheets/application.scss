@@ -1,7 +1,6 @@
 
-
  @media (min-device-width: 480px){
-   #container {
+   #content {
      background-image: url("door.jpg");
      position: relative;
      background-repeat: no-repeat;
@@ -11,10 +10,16 @@
    }
  }
 
- a {
-
+ .alink {
  display: block;
  width: 100vh;
  height: 200vh;
-
  }
+
+#bgrnd {
+  background-color: #116D89;
+}
+
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
