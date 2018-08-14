@@ -1,14 +1,14 @@
-  @font-face {
-    font-family: 'josefinSans';
-    src: url(JosefinSans-LightItalic.ttf) format("truetype");
-  }
-  @font-face{
-    font-family: 'snellBT-Regular';
-    src: url('SnellBT-Regular.otf')format('opentype');
-  }
-  @font-face {
-    font-family: 'cinzel';
-    src: url('Cinzel-Regular.otf')format('opentype');
+@font-face {
+  font-family: 'josefinSans';
+  src: url(JosefinSans-LightItalic.ttf) format("truetype");
+}
+@font-face{
+  font-family: 'snellBT-Regular';
+  src: url('SnellBT-Regular.otf')format('opentype');
+}
+@font-face {
+  font-family: 'cinzel';
+  src: url('Cinzel-Regular.otf')format('opentype');
 }
 
 
@@ -74,20 +74,42 @@ nav{
   }
 
 }
+
 .aboutUs{
-  width: 26em;
+  display: inline-block;
+  width: 30em !important;
   background-color: #BDA285;
   padding: 3em;
   margin-top: -2em;
-  position: absolute;
-  margin-left: 20%;
+  margin-left: 16%;
+  min-width: 20em;
   h1{
-    font-family: snellBT-Regula;
+    font-family: snellBT-Regular;
     font-size: 4em;
     text-align: center;
+    color: #404041;
+
   }
   p{
-    font-family: josefinSans;
-    text-align: center;
+      font-family: josefinSans;
+      text-align: center;
+      color: #404041;
+    }
+  }
+
+  #photos{
+  display: inline-block;
+  float: right;
+  display:inline;
+  margin-right: 7em;
+
+  padding: 1em;
+  background: #BDA285;
+  min-width: 20em;
+  margin-left: 100em;
+    #pics{margin: 0 auto;}
+  .bouquet{
+    display: inline-block;
+    width: 100%;
   }
 }
