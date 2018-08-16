@@ -66,6 +66,7 @@ nav{
 .workshop{
   height:40em;
   margin-top: 1em;
+  grid-column: 1/4;
 
   .worksop_photo{
     height: 100%;
@@ -75,14 +76,16 @@ nav{
 
 }
 
-.aboutUs{
+#aboutUs{
   display: inline-block;
-  width: 30em !important;
+  width: 35em !important;
   background-color: #BDA285;
   padding: 3em;
   margin-top: -2em;
-  margin-left: 16%;
+  margin-left: 20%;
   min-width: 20em;
+  float: left;
+
   h1{
     font-family: snellBT-Regular;
     font-size: 4em;
@@ -97,19 +100,55 @@ nav{
     }
   }
 
-  #photos{
+#photos{
   display: inline-block;
-  float: right;
-  display:inline;
+  float: left;
   margin-right: 7em;
-
   padding: 1em;
   background: #BDA285;
-  min-width: 20em;
-  margin-left: 100em;
-    #pics{margin: 0 auto;}
-  .bouquet{
-    display: inline-block;
-    width: 100%;
+  width: 20em;
+  margin-left: 20%;
+  margin-top: 2em;
+  align-self: start;
+#pics{margin: 0 auto;}
+.bouquet{
+  display: inline-block;
+  width: 100%;
   }
+}
+
+.wrapper {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
+.subscription{
+  margin-top:4em;
+  grid-column: 1/4;
+  background-color: #012F46;
+  text-align: center;
+  padding-top: 4em;
+  padding-left: 20em;
+  padding-right: 20em;
+  padding-bottom: 4em;
+  p{
+      font-family: josefinSans;
+      text-align: center;
+      color: #BDA285;
+      padding: 2em;
+    }
+    h1{
+      font-family: cinzel;
+      font-size: 4em;
+      text-align: center;
+      color: #BDA285;
+    }
+    #subscriptionButton{
+      background-color: #E43373;
+      color: #DEDFDE;
+      font-family: snellBT-Regular;
+      font-size: 35px;
+      padding-right: 0.5em;
+      padding-left: 0.5em;
+    }
 }
