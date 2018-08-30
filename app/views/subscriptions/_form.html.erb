@@ -1,0 +1,25 @@
+
+<%= simple_form_for(Subscription.new, :url => { :action => "create" })  do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :postcode %>
+    <%= f.input :mobile_number %>
+    <%= f.input :deliverAddress %>
+    <%= f.input :deliverName %>
+    <%= f.input :frequency, collection: Subscription::FREQUENCY, prompt: "Frequency" %>
+    <%= f.input :size, collection: Subscription::SIZE, prompt: "select size" %>
+    <%= f.input :delivery , collection: Subscription::DELIVERY, prompt: "Deliver or Collect" %>
+    <%= f.input :start %>
+  </div>
+
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="A month's subscription"
+        data-amount="500"
+        data-locale="auto"></script>
+<% end %>

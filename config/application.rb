@@ -36,5 +36,9 @@ module At1
   config.assets.enabled = true
   config.assets.paths << Rails.root.join("app", "assets", "fonts")
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
+
+  # config.stripe.secret_key = ENV['STRIPE_SECRET']
+  # config.stripe.publishable_key = ENV['STRIPE_APP']
+  # config.stripe.endpoint = '/payment/stripe-integration'
 end
 end
