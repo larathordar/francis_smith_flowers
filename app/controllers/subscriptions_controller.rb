@@ -25,24 +25,34 @@ class SubscriptionsController < ApplicationController
   # POST /subscriptions
   # POST /subscriptions.json
   def create
-      @subscription = Subscription.new subscription_params.merge(card_token: stripe_params["stripeToken"])
-      raise "Please, check registration errors" unless @subscription.valid?
-      @subscription.process_payment
-      @subscription.save
-      redirect_to @subscription, notice: 'Registration was successfully created.'
-    rescue e
-      flash[:error] = e.message
-      render :new
-    end
+       Stripe.api_key = Rails.application.credentials.stripe_api_key
 
-    private
-      def stripe_params
-        params.permit :stripeEmail, :stripeToken
-      end
+       plan_id = params[:plan_id]
+       plan = Stripe::Plan.retrieve(plan_id)
+       token = params[:stripeToken]
+       email = params[:email]
 
+       customer = Stripe::Customer.create(email: email, source: token)
 
+       subscription = subscriptions.create(plan: plan.id)
 
+       options = {
+         stripe_id: customer.id,
+         stripe_subscription_id: subscription.id,
+         subscribed: true
+       }
 
+       options.merge!(
+         card_last4: params[:user][:card_last4],
+         card_exp_month: params[:user][:card_exp_month],
+         card_exp_year: params[:user][:card_exp_year],
+         card_type: params[:user][:card_type]
+       ) if params[:user][:card_last4]
+
+       current_user.update(options)
+
+       redirect_to root_path, notice: "Your subscription was setup successfully!"
+     end
     respond_to do |format|
       if @subscription.save
         format.html { redirect_to @subscription, notice: 'Subscription was successfully created.' }
@@ -87,4 +97,4 @@ class SubscriptionsController < ApplicationController
     def subscription_params
       params.require(:subscription).permit(:name, :address, :postcode, :mobile_number, :deliverAddress, :deliverName, :frequency, :size, :delivery, :start)
     end
-end
+  end

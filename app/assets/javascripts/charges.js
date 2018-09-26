@@ -1,33 +1,83 @@
-jQuery(function ($) {
-  var show_error, stripeResponseHandler;
-  $("#new_subscription").submit(function (event) {
-    var $form;
-    $form = $(this);
-    $form.find("input[type=submit]").prop("disabled", true);
-    Stripe.card.createToken($form, stripeResponseHandler);
-    return false;
+(function() {
+  'use strict';
+
+  var elements = stripe.elements({
+    fonts: [
+      {
+        cssSrc: 'https://fonts.googleapis.com/css?family=Source+Code+Pro',
+      },
+    ],
+    // Stripe's examples are localized to specific languages, but if
+    // you wish to have Elements automatically detect your user's locale,
+    // use `locale: 'auto'` instead.
+    locale: window.__exampleLocale
   });
-  stripeResponseHandler = function (status, response) {
-    var $form, token;
-    $form = $("#new_subscription");
-    if (response.error) {
-      show_error(response.error.message);
-      $form.find("input[type=submit]").prop("disabled", false);
-    } else {
-      token = response.id;
-      $form.append($("<input type=\"hidden\" name=\"subscription[card_token]\" />").val(token));
-      $("[data-stripe=number]").remove();
-      $("[data-stripe=cvv]").remove();
-      $("[data-stripe=exp-year]").remove();
-      $("[data-stripe=exp-month]").remove();
-      $form.get(0).submit();
-    }
-    return false;
+
+  // Floating labels
+  var inputs = document.querySelectorAll('.cell.example.example2 .input');
+  Array.prototype.forEach.call(inputs, function(input) {
+    input.addEventListener('focus', function() {
+      input.classList.add('focused');
+    });
+    input.addEventListener('blur', function() {
+      input.classList.remove('focused');
+    });
+    input.addEventListener('keyup', function() {
+      if (input.value.length === 0) {
+        input.classList.add('empty');
+      } else {
+        input.classList.remove('empty');
+      }
+    });
+  });
+
+  var elementStyles = {
+    base: {
+      color: '#32325D',
+      fontWeight: 500,
+      fontFamily: 'Source Code Pro, Consolas, Menlo, monospace',
+      fontSize: '16px',
+      fontSmoothing: 'antialiased',
+
+      '::placeholder': {
+        color: '#CFD7DF',
+      },
+      ':-webkit-autofill': {
+        color: '#e39f48',
+      },
+    },
+    invalid: {
+      color: '#E25950',
+
+      '::placeholder': {
+        color: '#FFCCA5',
+      },
+    },
   };
 
-  show_error = function (message) {
-    $("#flash-messages").html('<div class="alert alert-warning"><a class="close" data-dismiss="alert">×</a><div id="flash_alert">' + message + '</div></div>');
-    $('.alert').delay(5000).fadeOut(3000);
-    return false;
+  var elementClasses = {
+    focus: 'focused',
+    empty: 'empty',
+    invalid: 'invalid',
   };
-});
+
+  var cardNumber = elements.create('cardNumber', {
+    style: elementStyles,
+    classes: elementClasses,
+  });
+  cardNumber.mount('#example2-card-number');
+
+  var cardExpiry = elements.create('cardExpiry', {
+    style: elementStyles,
+    classes: elementClasses,
+  });
+  cardExpiry.mount('#example2-card-expiry');
+
+  var cardCvc = elements.create('cardCvc', {
+    style: elementStyles,
+    classes: elementClasses,
+  });
+  cardCvc.mount('#example2-card-cvc');
+
+  registerElements([cardNumber, cardExpiry, cardCvc], 'example2');
+})();
