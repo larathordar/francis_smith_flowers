@@ -1,10 +1,13 @@
+@import './layout/fonts.css.scss';
+
+
 @font-face {
   font-family: 'josefinSans';
   src: font_url('JosefinSans-LightItalic.ttf') format('truetype');
 }
 @font-face{
   font-family: 'snellBT-Regular';
-  src: font_url('Snell-script') format('opentype');
+  src: font_url('SnellBT-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'cinzel';
