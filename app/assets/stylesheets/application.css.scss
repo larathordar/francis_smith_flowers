@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'josefinSans';
-  src: url('JosefinSans-LightItalic.ttf') format('truetype');
+  src: font_url('JosefinSans-LightItalic.ttf') format('truetype');
 }
 @font-face{
   font-family: 'snellBT-Regular';
-  src: url('SnellBT-Regular.otf') format('opentype');
+  src: font_url('Snell-script') format('opentype');
 }
 @font-face {
   font-family: 'cinzel';
-  src: url('Cinzel-Regular.otf')format('opentype');
+  src: font_url('Cinzel-Regular.otf')format('opentype');
 }
 
 
