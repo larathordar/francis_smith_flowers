@@ -1,9 +1,14 @@
-@import '/layout/fonts.css.scss';
-@import '/layout/font2.css.scss';
-
+@font-face {
+  font-family: 'josefinSans';
+  src: url('JosefinSans-LightItalic.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'snellBT-Regular';
+  src: url('SnellBT-Regular.otf') format('opentype');
+}
 @font-face {
   font-family: 'cinzel';
-  src: font_url('Cinzel-Regular.otf')format('opentype');
+  src: url('Cinzel-Regular.otf')format('opentype');
 }
 
 
