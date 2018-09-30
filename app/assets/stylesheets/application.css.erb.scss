@@ -1,5 +1,5 @@
 @import './layout/fonts.css.scss';
-@import url("../images/door.jpg");
+@import url("door.jpeg");
 
 
 @font-face {
@@ -19,7 +19,7 @@
 
  @media (min-device-width: 480px){
    #content {
-     background: url("../images/door.jpg");
+     background-image: url("door.jpeg");
      position: relative;
      background-repeat: no-repeat;
      background-size: cover;
