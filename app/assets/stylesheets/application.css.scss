@@ -17,7 +17,7 @@
 
 
 
- @media (min-device-width: 480px){
+ @media (min-device-width: 580px){
    #content {
      background-image: url("door.jpeg");
      position: relative;
@@ -304,7 +304,7 @@ display: none;
 
 
 
-@media (max-device-width: 480px){
+@media (max-device-width: 580px){
   #content {
     background-image: url("door.jpeg");
     position: relative;
@@ -372,15 +372,16 @@ display: none;
   }
 
   .workshop{
-   height:40em;
-   margin-top: -7em;
+   margin-top: -3em;
    grid-column: 1/4;
-   max-width: 480px;
+   max-width: 680px;
+   margin-bottom: 3em;
+
 
    .worksop_photo{
-     height: 100%;
-     display: table;
      margin: 0 auto;
+     max-width: 680px;
+     width: 100%;
    }
 
   }
@@ -393,8 +394,8 @@ display: none;
    width: 35em !important;
    background-color: #BDA285;
    padding: 0.5em;
-   margin-top: -2em;
    min-width: 20em;
+   margin-right: auto;
    margin: 0 auto;
    clear: both;
    position:relative;
@@ -427,7 +428,8 @@ display: none;
    align-self: start;
    clear:both;
    position:absolute;
-      display: none;
+  display: none;
+
 
 
 
@@ -454,7 +456,7 @@ display: none;
    padding-right: 2em;
    padding-bottom: 4em;
    margin-bottom: 4em;
-   max-width: 480px;
+   max-width: 580px;
 
    p{
        font-family: josefinSans;
@@ -546,7 +548,7 @@ display: none;
    }}
   .contactus{
 
-    max-width: 480px;
+    max-width: 580px;
 
    margin: 0 auto;
    margin-top: 4em;
