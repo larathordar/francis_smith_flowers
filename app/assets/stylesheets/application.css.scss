@@ -295,7 +295,11 @@ nav{
 }
 
 
+@media (max-device-width: 900px){
+  #photos {
+display: none;
 
+}}
 
 
 
@@ -371,7 +375,7 @@ nav{
    height:40em;
    margin-top: -7em;
    grid-column: 1/4;
-   max-width: 280px;
+   max-width: 480px;
 
    .worksop_photo{
      height: 100%;
@@ -391,6 +395,7 @@ nav{
    padding: 0.5em;
    margin-top: -2em;
    min-width: 20em;
+   margin: 0 auto;
    clear: both;
    position:relative;
 
@@ -422,6 +427,7 @@ nav{
    align-self: start;
    clear:both;
    position:absolute;
+      display: none;
 
 
 
