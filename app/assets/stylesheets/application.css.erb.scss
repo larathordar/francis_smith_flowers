@@ -17,15 +17,16 @@
 
 
 
- @media (min-device-width: 480px){
+ // @media (min-device-width: 480px){
    #content {
+     background-image: url("door.jpeg");
      position: relative;
      background-repeat: no-repeat;
      background-size: cover;
      background-attachment: fixed;
 
    }
- }
+ // }
 
  .alink {
  display: block;
