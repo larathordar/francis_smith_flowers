@@ -6,7 +6,6 @@ Rails.application.configure do
 
   config.assets.paths << Rails.root.join("app", "assets", "fonts")
  config.assets.enabled = true
- config.public_file_server.enabled = true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
