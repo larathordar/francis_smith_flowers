@@ -1,6 +1,6 @@
 class PricingController < ApplicationController
+  layout "subscribe"
+  def index
+  end
 
-def index
-    @plans = Plan.all
-end
   end

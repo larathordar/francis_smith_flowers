@@ -1,14 +1,3 @@
-<!-- <tbody>
-  <% @plans.each do |plan| %>
-    <h4>
-     <%= plan.name %>
-    </h4>
-    <p>
-      Price: <%= plan.price %>
-    </p>
-    <%= link_to 'Subscribe', new_subscription_path(name:plan.name, plan:plan.sku, price:plan.price, id:plan.id), class:"button is-fullwidth" %>
-  <% end %>
-</tbody> -->
 
 
 
@@ -19,12 +8,12 @@
     <div class="pricing-table">
       <div class="monthly">
         <div class="pricing-plan is-warning">
-          <div class="plan-header">Small sized bouquet once a Month</div>
+          <div class="plan-header">Perfectly Formed  once a Month</div>
           <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">£30/month</div>
           <div class="plan-items">
           </div>
           <div class="plan-footer">
-              <%= link_to 'Subscribe', new_subscription_path(plan: "small_monthly", plan_id: Rails.application.credentials.small_monthly), class:"button is-fullwidth" %>
+              <%= link_to 'Subscribe', new_subscription_path( plan_id: Rails.application.credentials.small_monthly), class:"button is-fullwidth" %>
           </div>
         </div>
         <div class="pricing-plan is-link is-active">
@@ -54,7 +43,7 @@
         </div>
         <div class="weekly">
             <div class="pricing-plan is-danger">
-              <div class="plan-header">Small sized bouquet weekly</div>
+              <div class="plan-header">Perfectly Formed  weekly</div>
               <div class="plan-price"><span class="plan-price-currency">£30/week</div>
               <div class="plan-footer">
                   <%= link_to 'Subscribe', new_subscription_path(plan: "small_weekly", plan_id: Rails.application.credentials.small_weekly), class:"button is-fullwidth" %>
@@ -84,7 +73,7 @@
         </div>
         <div class="Fortnightly">
           <div class="pricing-plan is-danger">
-            <div class="plan-header">Small sized bouquet fortnightly</div>
+            <div class="plan-header">Perfectly Formed  fortnightly</div>
             <div class="plan-price"><span class="plan-price-currency">£30/fortnightly</div>
             <div class="plan-footer">
                 <%= link_to 'Subscribe', new_subscription_path(plan: "small_fortnightly", plan_id: Rails.application.credentials.small_fortnightly), class:"button is-fullwidth" %>

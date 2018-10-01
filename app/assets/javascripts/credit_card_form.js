@@ -1,36 +1,81 @@
+document.addEventListener("turbolinks:load", function() {
+  const publishableKey = document.querySelector("meta[name='stripe-key']").content;
+  const stripe = Stripe(publishableKey);
 
-$(document).ready(function () {
-jQuery(function ($) {
-  var show_error, stripeResponseHandler;
-  $("#new_registration").submit(function (event) {
-    var $form;
-    $form = $(this);
-    $form.find("input[type=submit]").prop("disabled", true);
-    Stripe.card.createToken($form, stripeResponseHandler);
-    return false;
+  const elements = stripe.elements({
+    fonts: [{
+      cssSrc: "https://rsms.me/inter/inter-ui.css"
+    }],
+    locale: "auto"
   });
-  stripeResponseHandler = function (status, response) {
-     var $form, token;
-     $form = $("#new_registration");
-     if (response.error) {
-       show_error(response.error.message);
-       $form.find("input[type=submit]").prop("disabled", false);
-     } else {
-       token = response.id;
-       $form.append($("<input type=\"hidden\" name=\"registration[card_token]\" />").val(token));
-       $("[data-stripe=number]").remove();
-       $("[data-stripe=cvv]").remove();
-       $("[data-stripe=exp-year]").remove();
-       $("[data-stripe=exp-month]").remove();
-       $form.get(0).submit();
-     }
-     return false;
-   };
 
-   show_error = function (message) {
-     $("#flash-messages").html('<div class="alert alert-warning"><a class="close" data-dismiss="alert">×</a><div id="flash_alert">' + message + '</div></div>');
-     $('.alert').delay(5000).fadeOut(3000);
-     return false;
-   };
- });
+  const style = {
+    base: {
+      color: "#32325d",
+      fontWeight: 500,
+      fontFamily: "Inter UI, Open Sans, Segoe UI, sans-serif",
+      fontSize: "16px",
+      fontSmoothing: "antialiased",
+
+      "::placeholder": {
+        color: "#CFD7DF"
+      }
+    },
+    invalid: {
+      color: "#E25950"
+    }
+  };
+
+  const card = elements.create('card', { style });
+
+  card.mount("#card-element");
+
+  card.addEventListener('change', ( {error} ) => {
+    const displayError = document.getElementById('card-errors');
+    if(error) {
+      displayError.textContent = error.message;
+    } else {
+      displayError.textContent = "";
+    }
+  });
+
+  const form = document.getElementById('payment-form');
+
+  form.addEventListener('submit', async(event) => {
+    event.preventDefault();
+
+    const { token, error } = await stripe.createToken(card);
+
+    if (error) {
+      const errorElement = document.getElementById('card-errors');
+      errorElement.textContent = error.message;
+    } else {
+      stripeTokenHandler(token);
+    }
+  });
+
+
+  const stripeTokenHandler = (token) => {
+    const form = document.getElementById('payment-form');
+    const hiddenInput = document.createElement('input');
+    hiddenInput.setAttribute('type', 'hidden');
+    hiddenInput.setAttribute('name', 'stripeToken');
+    hiddenInput.setAttribute('value', token.id);
+    form.appendChild(hiddenInput);
+
+    ["type", "last4", "exp_month", "exp_year"].forEach(function(field) {
+      addCardField(form, token, field);
+    });
+
+    form.submit();
+  }
+
+  function addCardField(form, token, field) {
+    let hiddenInput = document.createElement('input');
+    hiddenInput.setAttribute('type', 'hidden');
+    hiddenInput.setAttribute('name', "user[card_" + field + "]");
+    hiddenInput.setAttribute('value', token.card[field]);
+    form.appendChild(hiddenInput);
+  }
+
 });
