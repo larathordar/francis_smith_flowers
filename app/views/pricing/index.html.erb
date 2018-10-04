@@ -1,108 +1,49 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Francis Smith</title>
+</head>
+
+<body class="plan_backg">
+
+<div class="Subscription_options">
 
 
 
-<section class="section">
-  <div class="has-text-centered box">
-    <h1 class="title">Pricing</h1>
-    <h2 class="subtitle">Choose the best plan that matches your reading consistency and budget.</h2>
-    <div class="pricing-table">
-      <div class="monthly">
-        <div class="pricing-plan is-warning">
-          <div class="plan-header">Perfectly Formed  once a Month</div>
-          <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">£30/month</div>
-          <div class="plan-items">
-          </div>
-          <div class="plan-footer">
-              <%= link_to 'Subscribe', new_subscription_path( plan_id: Rails.application.credentials.small_monthly), class:"button is-fullwidth" %>
-          </div>
-        </div>
-        <div class="pricing-plan is-link is-active">
-          <div class="plan-header">Medium sized bouquet once a Month</div>
-          <div class="plan-price"><span class="plan-price-currency">£50/month</div>
-          <div class="plan-items">
-            <div class="plan-item">10 Downloads</div>
-          </div>
-          <div class="plan-footer">
-              <%= link_to 'Subscribe', new_subscription_path(plan: "plan_DaRWmuIl2M8NoJ", plan_id: Rails.application.credentials.medium_monthly), class:"button is-fullwidth" %>
-          </div>
-        </div>
-        <div class="pricing-plan is-danger">
-          <div class="plan-header">Large sized bouquet once a Month</div>
-          <div class="plan-price">£80/month</div>
-          <div class="plan-footer">
-              <%= link_to 'Subscribe', new_subscription_path(plan: "large_monthly", plan_id: Rails.application.credentials.large_monthly), class:"button is-fullwidth" %>
-          </div>
-          </div>
-          <div class="pricing-plan is-danger">
-            <div class="plan-header">Sublime sized bouquet once a Month</div>
-            <div class="plan-price"><span class="plan-price-currency">£110/month</div>
-            <div class="plan-footer">
-                <%= link_to 'Subscribe', new_subscription_path(plan: "sublime_monthly", plan_id: Rails.application.credentials.sublime_monthly), class:"button is-fullwidth" %>
-            </div>
-            </div>
-        </div>
-        <div class="weekly">
-            <div class="pricing-plan is-danger">
-              <div class="plan-header">Perfectly Formed  weekly</div>
-              <div class="plan-price"><span class="plan-price-currency">£30/week</div>
-              <div class="plan-footer">
-                  <%= link_to 'Subscribe', new_subscription_path(plan: "small_weekly", plan_id: Rails.application.credentials.small_weekly), class:"button is-fullwidth" %>
-              </div>
-            </div>
-              <div class="pricing-plan is-danger">
-                <div class="plan-header">Medium sized bouquet weekly</div>
-                <div class="plan-price"><span class="plan-price-currency">£50/week</div>
-                <div class="plan-footer">
-                    <%= link_to 'Subscribe', new_subscription_path(plan: "medium_weekly", plan_id: Rails.application.credentials.medium_weekly), class:"button is-fullwidth" %>
-                </div>
-              </div>
-                <div class="pricing-plan is-danger">
-                  <div class="plan-header">Large sized bouquet weekly</div>
-                  <div class="plan-price"><span class="plan-price-currency">£80/week</div>
-                  <div class="plan-footer">
-                      <%= link_to 'Subscribe', new_subscription_path(plan: "large_weekly", plan_id: Rails.application.credentials.large_weekly), class:"button is-fullwidth" %>
-                  </div>
-                </div>
-                  <div class="pricing-plan is-danger">
-                    <div class="plan-header">Sublime sized bouquet weekly</div>
-                    <div class="plan-price"><span class="plan-price-currency">£110/week</div>
-                    <div class="plan-footer">
-                        <%= link_to 'Subscribe', new_subscription_path(plan: "sublime_weekly", plan_id: Rails.application.credentials.sublime_weekly), class:"button is-fullwidth" %>
-                    </div>
-                  </div>
-        </div>
-        <div class="Fortnightly">
-          <div class="pricing-plan is-danger">
-            <div class="plan-header">Perfectly Formed  fortnightly</div>
-            <div class="plan-price"><span class="plan-price-currency">£30/fortnightly</div>
-            <div class="plan-footer">
-                <%= link_to 'Subscribe', new_subscription_path(plan: "small_fortnightly", plan_id: Rails.application.credentials.small_fortnightly), class:"button is-fullwidth" %>
-            </div>
-          </div>
-            <div class="pricing-plan is-danger">
-              <div class="plan-header">Medium sized bouquet fortnightly</div>
-              <div class="plan-price"><span class="plan-price-currency">£50/fortnightly</div>
-              <div class="plan-footer">
-                  <%= link_to 'Subscribe', new_subscription_path(plan: "medium_fortnightly", plan_id: Rails.application.credentials.medium_fortnightly), class:"button is-fullwidth" %>
-              </div>
-            </div>
-              <div class="pricing-plan is-danger">
-                <div class="plan-header">Large sized bouquet fortnightly</div>
-                <div class="plan-price"><span class="plan-price-currency">£80/fortnightlyk</div>
-                <div class="plan-footer">
-                    <%= link_to 'Subscribe', new_subscription_path(plan: "large_fortnightly", plan_id: Rails.application.credentials.large_fortnightly), class:"button is-fullwidth" %>
-                </div>
-              </div>
-                <div class="pricing-plan is-danger">
-                  <div class="plan-header">Sublime sized bouquet fortnightly</div>
-                  <div class="plan-price"><span class="plan-price-currency">£110/fortnightly</div>
-                  <div class="plan-footer">
-                      <%= link_to 'Subscribe', new_subscription_path(plan: "sublime_fortnightly", plan_id: Rails.application.credentials.sublime_fortnightly), class:"button is-fullwidth" %>
-                  </div>
-                </div>
-        </div>
+  <br>
+  <br>
+  <br>
 
-      </div>
+  <%= render 'buttons' %>
+
+
+    <!-- <div class="card-body">
+      <h5 class="card-title">Fortnightly Bouquet</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Subscribe</a>
     </div>
+  </>
+
+  <div class="card" style="width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title">Monthly Bouquet</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Subscribe</a>
+    </div>
+  </div> -->
   </div>
-</section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   get 'pricing/index'
+  get 'pricing/weekly'
+  get 'pricing/monthly'
+  get 'pricing/fortnightly'
+
+
+
   resources :subscriptions
   devise_for :users
   post '/charges', controller: :subscriptions, action: :create
