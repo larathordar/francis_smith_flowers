@@ -196,7 +196,7 @@ nav{
 
 
     #subscriptionButton{
-      background-color: #116D89;
+      background-color: #116D89 !important;
       color: #DEDFDE;
       font-family: snellBT-Regular;
       font-size: 25px;
@@ -318,7 +318,7 @@ nav{
   }
 .Subscription_buttons{
   margin-right:12%;
-  margin-left: 10%;
+  margin-left: 12%;
   margin-top: 5rem;
 
     h2{
@@ -330,7 +330,7 @@ nav{
       color: #5B5B5B;
       margin-right: 1rem;
   }
-  a{
+  button{
     float: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
