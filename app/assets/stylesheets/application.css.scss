@@ -68,8 +68,8 @@ nav{
 
     .meaning{
       font-family: josefinSansItalic !important;
-      font-size: 20px !important;
-
+      font-size: 18px !important;
+      margin-left: 30px;
       }
 
   }
@@ -98,7 +98,6 @@ nav{
 
 .workshop{
   height:40em;
-  margin-top: 2em;
   grid-column: 1/4;
 
   .worksop_photo{
@@ -132,11 +131,19 @@ nav{
       text-align: center;
       color: #404041;
     }
-    .quote{
+    .quoteee{
       font-family: cinzel;
       text-align: center;
       color: #404041;
+      font-size: 18px;
 
+    }
+    .name{
+      font-family: cinzel;
+      text-align: center;
+      color: #404041;
+      font-size: 10px;
+      line-height:1px;
     }
     .title2{
         font-family: cinzel;
@@ -185,10 +192,12 @@ nav{
       font-family: josefinSans;
       text-align: center;
       color: #BDA285;
+      margin-left: 3em;
+      margin-right: 3em;
     }
     h1{
       font-family: cinzel;
-      font-size: 4em;
+      font-size: 65px;
       text-align: center;
       color: #BDA285;
     }
@@ -198,8 +207,8 @@ nav{
     #subscriptionButton{
       background-color: #116D89 !important;
       color: #DEDFDE;
-      font-family: snellBT-Regular;
-      font-size: 25px;
+      font-family: cinzel;
+      font-size: 16px;
       padding-right: 0.5em;
       padding-left: 0.8em;
     }
@@ -207,12 +216,13 @@ nav{
       font-family: cinzel;
       text-align: center;
       color: #BDA285;
+      font-size: 20px;
     }
     .title2{
       font-family: cinzel;
       text-align: center;
       color: #BDA285;
-      font-size: 1.5em;
+      font-size: 30px;
     }
 }
 .typeform-widget{
@@ -317,9 +327,10 @@ nav{
     background-color: #012F46;
   }
 .Subscription_buttons{
-  margin-right:12%;
-  margin-left: 12%;
+  margin-right:35%;
+  margin-left: 35%;
   margin-top: 5rem;
+
 
     h2{
       color: #fef0e4;
@@ -422,8 +433,9 @@ display: none;
      line-height:24px;
 
      .meaning{
-         font-family: josefinSansItalic !important;
-         font-size: 20px !important;
+       font-family: josefinSansItalic !important;
+       font-size: 18px !important;
+       margin-left: 30px;
        }
    }
 
@@ -453,15 +465,15 @@ display: none;
   }
 
   .workshop{
-   margin-top: -3em;
    grid-column: 1/4;
-   max-width: 680px;
    margin-bottom: 3em;
+   max-width: 580px;
+
 
 
    .worksop_photo{
      margin: 0 auto;
-     max-width: 680px;
+     max-width: 580px;
      width: 100%;
    }
 
@@ -493,16 +505,26 @@ display: none;
        text-align: center;
        color: #404041;
      }
-     .quote{
+     .quoteee{
        font-family: cinzel;
        text-align: center;
        color: #404041;
+       font-size: 14px;
+
      }
      .name{
        font-family: cinzel;
        text-align: center;
        color: #404041;
-       font-size: 14px;
+       font-size: 10px;
+       line-height:1px;
+     }
+     .title2{
+         font-family: cinzel;
+         text-align: center;
+         color: #404041;
+         font-size: 1em;
+
      }
 
    }
@@ -553,17 +575,19 @@ display: none;
      }
      h1{
        font-family: cinzel;
-       font-size: 2em;
+       font-size: 1.5em;
        text-align: center;
        color: #BDA285;
      }
+
+
      #subscriptionButton{
-       background-color: #116D89;
+       background-color: #116D89 !important;
        color: #DEDFDE;
-       font-family: snellBT-Regular;
-       font-size: 20px;
+       font-family: cinzel;
+       font-size: 16px;
        padding-right: 0.5em;
-       padding-left: 0.5em;
+       padding-left: 0.8em;
      }
      .quote{
        font-family: cinzel;
@@ -637,6 +661,8 @@ display: none;
      text-align: center;
      margin-bottom: 1em;
      font-size: 2em;
+     font-size: 1.5em;
+
    }
    p{
      font-family: josefinSans;
@@ -688,4 +714,37 @@ display: none;
          text-align: center;
          color: #BDA285;
        }
+       .plan_backg{
+         background-color: #012F46;
+       }
+     .Subscription_buttons{
+       margin-right:13%;
+       margin-left: 13%;
+       margin-top: 5rem;
+
+
+         h2{
+           color: #fef0e4;
+           font-family: josefinSans;
+           font-size: 2rem;
+         }
+         p{
+           color: #5B5B5B;
+           margin-right: 1rem;
+       }
+       button{
+         float: left;
+         margin-left: 0.1rem;
+         margin-right: 0.1rem;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+         background: #fef0e4;
+         color: #5B5B5B;
+         font-family: Cinzel-Regular;
+         width:20rem;
+         font-size: 1.0rem;
+
+
+       }
+     }
   }
