@@ -30,7 +30,13 @@
      background-attachment: fixed;
 
    }
-
+   #callButtons{
+      background-color: #116D89 !important;
+      color: #DEDFDE;
+      font-family: cinzel;
+      font-size: 16px;
+      margin: 3px;
+    }
 
  .alink {
  display: block;
@@ -89,11 +95,16 @@ nav{
 
 }
 .instagram{
-
   font-family: snellBT-Regular;
   font-size: 4em;
   text-align: center;
   color: #404041;
+  .morePhotos{
+    text-align:left;
+    font-family: snellBT-Regular;
+    color: #404041;
+    font-size: 0.5em;
+  }
 }
 
 .workshop{
@@ -120,10 +131,18 @@ nav{
   float: left;
 
   h1{
-    font-family: snellBT-Regular;
-    font-size: 5em;
+    font-size: 2em;
     text-align: center;
     color: #404041;
+    font-family: cinzel !important;
+    font-style: normal !important;
+    line-height:24px;
+
+    .meaning{
+      font-family: josefinSansItalic !important;
+      font-size: 18px !important;
+      margin-left: 30px;
+      }
   }
 
   p{
@@ -324,7 +343,7 @@ nav{
     color: #fef0e4;
   }
   .plan_backg{
-    background-color: #012F46;
+    background-image: url("piano.jpeg");
   }
 .Subscription_buttons{
   margin-right:35%;
@@ -494,10 +513,18 @@ display: none;
 
 
    h1{
-     font-family: snellBT-Regular;
-     font-size: 3em;
+     font-size: 2em;
      text-align: center;
      color: #404041;
+     font-family: cinzel !important;
+     font-style: normal !important;
+     line-height:24px;
+
+     .meaning{
+       font-family: josefinSansItalic !important;
+       font-size: 18px !important;
+       margin-left: 30px;
+       }
    }
 
    p{
