@@ -405,6 +405,19 @@ nav{
   #photos {
 display: none;
 
+}
+.workshop{
+ grid-column: 1/4;
+ margin-bottom: 3em;
+ max-width: 900px;
+
+
+
+ .worksop_photo{
+   margin: 0 auto;
+   width: 100%;
+ }
+
 }}
 
 
@@ -446,7 +459,7 @@ display: none;
         background-color: #116D89;
       }
   #bgrnd {
-   background-color: #fef0e4;
+   background-color: #ffffff;
   }
 
   nav{
@@ -501,7 +514,7 @@ display: none;
   .workshop{
    grid-column: 1/4;
    margin-bottom: 3em;
-   max-width: 1040px;
+   max-width: 580px;
 
 
 
