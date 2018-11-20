@@ -58,7 +58,7 @@
        background-color: #116D89;
      }
 #bgrnd {
-  background-color: #fef0e4;
+  background-color: #FFFFFF;
 }
 
 nav{
@@ -123,7 +123,7 @@ nav{
   background-color:#fef0e4;
 }
 #aboutUs{
-  background-color: #BDA285;
+  background-color: #fef0e4;
   padding: 3em;
   margin-top: -2em;
   margin-left: 20%;
@@ -177,7 +177,7 @@ nav{
   float: left;
   margin-right: 7em;
   padding: 1em;
-  background: #BDA285;
+  background: #fef0e4;
   width: 20em;
   margin-left: 20%;
   margin-top: 2em;
@@ -287,9 +287,10 @@ nav{
 
 }
 .wellbeing{grid-column: 1/4;
+  background-color: fffff;
 
   .card{
-  width: 70em;
+  width: 70%;
   margin: 0 auto;
   background: #116D89;;
   margin-top: 4em;
@@ -418,6 +419,13 @@ display: none;
     background-attachment: fixed;
 
   }
+  #callButtons{
+     background-color: #116D89 !important;
+     color: #DEDFDE;
+     font-family: cinzel;
+     font-size: 12px;
+     margin: 1px;
+   }
   .alink {
   display: block;
   width: 100vh;
@@ -443,6 +451,7 @@ display: none;
 
   nav{
    background-color: #012F46;
+
 
    .navbar-brand{
      font-family: cinzel !important;
@@ -481,18 +490,23 @@ display: none;
    font-size: 2.5em;
    text-align: center;
    color: #404041;
+   .morePhotos{
+     text-align:left;
+     font-family: snellBT-Regular;
+     color: #404041;
+     font-size: 0.5em;
+   }
   }
 
   .workshop{
    grid-column: 1/4;
    margin-bottom: 3em;
-   max-width: 580px;
+   max-width: 1040px;
 
 
 
    .worksop_photo{
      margin: 0 auto;
-     max-width: 580px;
      width: 100%;
    }
 
@@ -504,7 +518,7 @@ display: none;
   #aboutUs{
     max-width: 580px;
    width: 100%;
-   background-color: #BDA285;
+   background-color: #fef0e4 ;
    padding: 0.5em;
    min-width: 20em;
    clear: both;
@@ -558,7 +572,7 @@ display: none;
 
   #photos{
    padding: 1em;
-   background: #BDA285;
+   background: #fef0e4 ;
    width: 20em;
    margin-top: 2em;
    align-self: start;
@@ -673,14 +687,14 @@ display: none;
   .wellbeing{grid-column: 1/4;
 
    .card{
-   width: 70%;
+   width: 100%;
    margin: 0 auto;
    background: #116D89;;
    margin-top: 4em;
    padding: 3em;
    color: #DEDFDE;
    margin-bottom: 1em;
-  max-width: 580%;
+  max-width: 580px;
   }
 
    h1{
@@ -742,10 +756,10 @@ display: none;
          color: #BDA285;
        }
        .plan_backg{
-         background-color: #012F46;
+         background-image: url("piano.jpeg");
        }
      .Subscription_buttons{
-       margin-right:13%;
+       margin-right:13% !important;
        margin-left: 13%;
        margin-top: 5rem;
 
