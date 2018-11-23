@@ -287,12 +287,14 @@ nav{
 
 }
 .wellbeing{grid-column: 1/4;
-  background-color: fffff;
-
+  background-color: #ffffff !important;
+#wellness{
+    background-color: #ffffff !important;
+}
   .card{
   width: 70%;
   margin: 0 auto;
-  background: #116D89;;
+  background: #116D89;
   margin-top: 4em;
   padding: 3em;
   color: #DEDFDE;
@@ -492,6 +494,8 @@ display: none;
      justify-content: flex-end !important;
      margin-left: 0.2em;
      margin-right: 0.2em;
+     text-align: right;
+
    }
 
    .navbar-nav{
