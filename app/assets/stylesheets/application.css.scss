@@ -37,7 +37,13 @@
       font-size: 16px;
       margin: 3px;
     }
-    
+    section[id]:before {
+  display: block;
+  height: 88px;   /* equal to the header height */
+  margin-top: -88px;  /* negative margin equal to the header height */
+  visibility: hidden;
+  content: "";
+}
 
  .alink {
  display: block;
