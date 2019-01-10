@@ -1,5 +1,4 @@
 @import './layout/fonts.css.scss';
-@import url("door.jpg");
 
 
 @font-face {
@@ -30,6 +29,12 @@
      background-attachment: fixed;
 
    }
+   :target::before {
+  content: "";
+  display: block;
+  height: 88px; /* fixed header height*/
+  margin: -88px 0 0; /* negative fixed header height */
+}
    #callButtons{
       background-color: #116D89 !important;
       color: #DEDFDE;
@@ -37,13 +42,7 @@
       font-size: 16px;
       margin: 3px;
     }
-    section[id]:before {
-  display: block;
-  height: 88px;   /* equal to the header height */
-  margin-top: -88px;  /* negative margin equal to the header height */
-  visibility: hidden;
-  content: "";
-}
+
 
  .alink {
  display: block;
@@ -553,9 +552,7 @@ display: none;
 
   }
 
-  .contact{
-   background-color:#fef0e4;
-  }
+
   #aboutUs{
     max-width: 580px;
    width: 100%;
@@ -839,5 +836,11 @@ display: none;
 
 
        }
+     }
+     :target::before {
+     content: "";
+     display: block;
+     height: 400px; /* fixed header height*/
+     margin: -400px 0 0; /* negative fixed header height */
      }
   }

@@ -16,32 +16,3 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-
-
-$(document).ready(function() {
-  $("#link1").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#anchor1").offset().top
-      }, 8000);
-  });
-  $("#link1").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#anchor1").offset().top
-      }, 8000);
-  });
-  $("#link2").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#repeatPrescription").offset().top
-        }, 8000);
-  });
-  $("#link3").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#instagram").offset().top
-        }, 8000);
-  });
-  $("#link4").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#instagram").offset().top
-        }, 8000);
-  });
-});
