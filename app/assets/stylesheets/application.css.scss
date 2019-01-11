@@ -840,7 +840,7 @@ display: none;
      :target::before {
      content: "";
      display: block;
-     height: 400px; /* fixed header height*/
-     margin: -400px 0 0; /* negative fixed header height */
+     height: 1000px; /* fixed header height*/
+     margin: -1000px 0 0; /* negative fixed header height */
      }
   }
