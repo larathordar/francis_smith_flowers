@@ -32,8 +32,8 @@
    :target::before {
   content: "";
   display: block;
-  height: 88px; /* fixed header height*/
-  margin: -88px 0 0; /* negative fixed header height */
+  height: 200px; /* fixed header height*/
+  margin: -200px 0 0; /* negative fixed header height */
 }
    #callButtons{
       background-color: #116D89 !important;
@@ -300,6 +300,8 @@ nav{
     background-color: #ffffff !important;
 }
   .card{
+    position: relative;
+
   width: 70%;
   margin: 0 auto;
   background: #116D89;
@@ -348,7 +350,7 @@ nav{
     width: 0;
     height: 0;
     z-index: -1;
-    top: -88px;
+    top: -90px;
     left: 0;
     visibility: hidden;
 }
@@ -757,7 +759,18 @@ display: none;
     width: 0;
     height: 0;
     z-index: -1;
-    top: -88px;
+    top: -90px;
+    left: 0;
+    visibility: hidden;
+}
+
+#subscribe {
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    top: -90px;
     left: 0;
     visibility: hidden;
 }
@@ -837,10 +850,5 @@ display: none;
 
        }
      }
-     :target::before {
-     content: "";
-     display: block;
-     height: 1000px; /* fixed header height*/
-     margin: -1000px 0 0; /* negative fixed header height */
-     }
+
   }
