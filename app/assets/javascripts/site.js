@@ -1,3 +1,5 @@
-document.getElementById("bottom").addEventListener("click", function () {
-  document.body.scrollIntoView(false);
-});
+function gototab(reload)
+   {
+    window.location.hash = 'aboutUs';
+    window.location.reload(true);
+   }
