@@ -61,7 +61,7 @@
 }
 
 nav{
-  background-color: #012F46;
+  background-color: #fef0e4;
   margin-top: -88 !important;
 
   .navbar-brand{
@@ -69,7 +69,7 @@ nav{
     font-style: normal !important;
     font-size: 2em !important;
     margin-left: 4em;
-    color: #fef0e4 !important;
+    color: #404041 !important;
     line-height:24px;
 
     .meaning{
@@ -83,7 +83,7 @@ nav{
   .nav-item{
     font-family: josefinSans !important;
     font-size: 1.2em !important;
-    color: #fef0e4 !important;
+    color: #404041!important;
     justify-content: flex-end !important;
   }
 
@@ -109,7 +109,6 @@ nav{
 
   }
 }
-
 .workshop{
   height:40em;
   grid-column: 1/4;
@@ -295,14 +294,14 @@ nav{
   background-color: #ffffff !important;
 #wellness{
     background-color: #ffffff !important;
+padding-top: 110px !important;
 }
   .card{
     position: relative;
-
+  margin-top:30px !important;
   width: 70%;
   margin: 0 auto;
   background: #116D89;
-  margin-top: 4em;
   padding: 3em;
   color: #DEDFDE;
 }
@@ -454,6 +453,20 @@ nav{
     font-family: josefinSans;
     text-align: center;
   }
+  .social{
+    color: #404041 !important;
+  }
+  #mc_embed_signup{background:#fef0e4;
+    clear:left;
+    text-align: left !important;
+    p{text-align: left !important;}
+    label{
+      font-family: josefinSans;
+    }
+  }
+  #mc-embedded-subscribe { background-color: #404041 !important; }
+#mc-embedded-subscribe:hover { background-color: #116D89 !important; }
+
 }
 
 
@@ -520,14 +533,14 @@ display: none;
   }
 
   nav{
-   background-color: #012F46;
+   background-color: #fef0e4;
 
 
    .navbar-brand{
      font-family: cinzel !important;
      font-style: normal !important;
      font-size: 2em !important;
-     color: #fef0e4 !important;
+     color: #012F46 !important;
      line-height:24px;
 
      .meaning{
@@ -541,7 +554,7 @@ display: none;
    .nav-item{
      font-family: josefinSans !important;
      font-size: 1.2em !important;
-     color: #fef0e4 !important;
+     color: #012F46!important;
      justify-content: flex-end !important;
      margin-left: 0.2em;
      margin-right: 0.2em;
@@ -750,8 +763,10 @@ display: none;
 
   }
   .wellbeing{grid-column: 1/4;
+        padding-top: 110px !important;
 
    .card{
+    padding-top: 110px !important;
    width: 100%;
    margin-bottom: 5px!important;
    background: #116D89;;
@@ -868,6 +883,27 @@ display: none;
       height: 500px; /* fixed header height*/
       margin: -500px 0 0; /* negative fixed header height */
     }
+     }
+     .footer{
+       margin-top: 50px;
+       background: #fef0e4 !important;
+       color: #404041;
+
+
+       h4{
+         font-family: cinzel;
+         text-align: center;
+         margin-bottom: 1em;
+       }
+       p{
+         font-family: josefinSans;
+         text-align: center;
+       }
+       .social{
+         color: #404041 !important;
+       }
+       #mc_embed_signup{background:#fef0e4; clear:left; font:14px Helvetica,Arial,sans-serif;  width:300px;}
+
      }
 
   }
