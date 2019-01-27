@@ -469,15 +469,21 @@ padding-top: 110px !important;
   .social{
     color: #404041 !important;
   }
+  .left{
+    text-align: left !important;
+  }
   #mc_embed_signup{background:#fef0e4;
-    clear:left;
+    padding: auto;
     text-align: left !important;
     p{text-align: left !important;}
     label{
       font-family: josefinSans;
     }
+    input{
+      padding: 0 !important;
+    }
   }
-  #mc-embedded-subscribe { background-color: #404041 !important; }
+  #mc-embedded-subscribe { background-color: #116D89 !important; }
 #mc-embedded-subscribe:hover { background-color: #116D89 !important; }
 
 }
@@ -774,6 +780,19 @@ display: none;
      color: #5B5B5B;}
    }
 
+  }
+  .cookie{
+    background: #fef0e4 !important;
+    margin-top: 50px;
+
+    .CookieDeclaration{
+      background: #fef0e4 !important;
+      color: #404041;
+      font-family: josefinSans;
+      p{
+        font-family: josefinSans;
+      }
+    }
   }
 
   .wellbeing{grid-column: 1/4;
