@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'pricing/weekly'
   get 'pricing/monthly'
   get 'pricing/fortnightly'
+  get 'landing/cookie'
+
 
 
 
