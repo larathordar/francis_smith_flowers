@@ -290,14 +290,14 @@ nav{
   }
 
 }
+.cookie{
+  background: #fef0e4 !important;
+  margin-top: 100px;
 
-.CookieDeclaration{
+  .CookieDeclaration{
     background: #fef0e4 !important;
     color: #404041;
     font-family: josefinSans;
-    text-align: center;
-
-
     h4{
       font-family: cinzel;
       text-align: center;
@@ -307,7 +307,7 @@ nav{
       font-family: josefinSans;
       text-align: center;
     }
-
+  }
 }
 .wellbeing{grid-column: 1/4;
   background-color: #ffffff !important;
