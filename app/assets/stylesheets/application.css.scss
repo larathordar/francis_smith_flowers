@@ -290,6 +290,25 @@ nav{
   }
 
 }
+
+.CookieDeclaration{
+    background: #fef0e4 !important;
+    color: #404041;
+    font-family: josefinSans;
+    text-align: center;
+
+
+    h4{
+      font-family: cinzel;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    p{
+      font-family: josefinSans;
+      text-align: center;
+    }
+
+}
 .wellbeing{grid-column: 1/4;
   background-color: #ffffff !important;
 #wellness{
@@ -762,6 +781,7 @@ display: none;
    }
 
   }
+
   .wellbeing{grid-column: 1/4;
         padding-top: 110px !important;
 
