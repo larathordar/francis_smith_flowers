@@ -196,11 +196,7 @@ nav{
 }
 
 .brick{
-  background-image: url("bricks.jpeg");
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background:white;
 }
 .subscription{
   margin-top:30px;
@@ -314,13 +310,8 @@ nav{
     }
   }
 }
-.wellbeing{grid-column: 1/4;
-  background-image: url("bricks.jpeg");
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 80px;
+.wellbeing{color: white;
+
 #wellness{
   grid-column: 1/4;
     background-color: #ffffff !important;
@@ -520,6 +511,7 @@ display: none;
  grid-column: 1/4;
  margin-bottom: 3em;
  max-width: 900px;
+ margin-top: 88px;
 
 
 
@@ -575,6 +567,8 @@ display: none;
 
   nav{
    background-color: #fef0e4;
+   margin-top: -88 !important;
+
 
 
    .navbar-brand{
@@ -716,11 +710,7 @@ display: none;
    grid-template-columns: 50% 50%;
   }
   .brick{
-    background-image: url("bricks.jpeg");
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background:white;
   }
   .subscription{
    grid-column: 1/4;
