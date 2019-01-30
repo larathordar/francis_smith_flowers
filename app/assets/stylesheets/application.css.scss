@@ -196,7 +196,11 @@ nav{
 }
 
 .brick{
-  background:white;
+  background-image: url("bricks.jpeg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .subscription{
   margin-top:30px;
@@ -310,8 +314,13 @@ nav{
     }
   }
 }
-.wellbeing{color: white;
-
+.wellbeing{grid-column: 1/4;
+  background-image: url("bricks.jpeg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 80px;
 #wellness{
   grid-column: 1/4;
     background-color: #ffffff !important;
@@ -710,7 +719,11 @@ display: none;
    grid-template-columns: 50% 50%;
   }
   .brick{
-    background:white;
+    background-image: url("bricks.jpeg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
   .subscription{
    grid-column: 1/4;
