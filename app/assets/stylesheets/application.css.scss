@@ -201,14 +201,23 @@ nav{
 .subscription{
   margin-top:30px;
     grid-column: 1/4;
-    background-color: #012F46;
+    background-image: url("bricks.jpeg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     padding-top: 110px !important;
-    padding-left: 15em;
-    padding-right: 15em;
-    padding-bottom: 4em;
     margin-bottom: 4em;
+    padding-bottom: 110px;
+.content{background-color: #012F46;
+   opacity: 0.9;
+  text-align: center;
+  padding: 30px;
+  width: 70%;
+  margin: 0 auto;
 
+}
 
   p{
       font-family: josefinSans;
@@ -700,21 +709,25 @@ display: none;
   }
 
   .subscription{
-   grid-column: 1/4;
-   background-color: #012F46;
-   text-align: center;
-   padding-top: 100px;
-   padding-left: 1em;
-   padding-right: 1em;
-   padding-bottom: 4em;
-   max-width: 580px;
-   width: 100%;
-   .quote{
-     font-family: cinzel;
-     text-align: center !important;
-     color: #BDA285;
-     font-size: 20px;
-   }
+    margin-top:30px;
+      grid-column: 1/4;
+      background-image: url("bricks.jpeg");
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      text-align: center;
+      padding-top: 110px !important;
+      margin-bottom: 4em;
+      padding-bottom: 60px;
+  .content{background-color: #012F46;
+     opacity: 0.9;
+    text-align: center;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+
+  }
 
    p{
        font-family: josefinSans;
